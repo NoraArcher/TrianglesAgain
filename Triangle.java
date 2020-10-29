@@ -1,5 +1,6 @@
 public class Triangle {
 
+
   private Point v1, v2, v3; //instance variables
 
   public Triangle(Point a, Point b, Point c) { //constructors
@@ -52,8 +53,16 @@ public class Triangle {
   }
 
   public void setVertex(int index, Point newP) {
-    //replace the specified Point (0,1, or 2) with the new Point
-    //System.out.println( "no setVertex()" );
+    if (index == 0) {
+      v1 = newP;
+    }
+    if (index == 1) {
+      v2 = newP;
+    }
+    if (index == 2) {
+      v3 = newP;
+    }
   }
+
 
 }

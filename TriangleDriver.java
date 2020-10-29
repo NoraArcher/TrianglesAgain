@@ -96,6 +96,16 @@ public class TriangleDriver {
       System.out.println( T3.toString() );
     }
 
+    System.out.println();
+
+    T2.setVertex(2, p3);
+    if ( T2.toString().equals("v1(-3.732, 2.3) v2(-3.732, -5.7) v3(0.0, 0.0)") ) {
+      System.out.println( "mutator test: SUCCESS" );
+    } else {
+      System.out.println( "mutator test: FAIL" );
+      System.out.println( T2.toString() );
+    }
+
 
 
   }

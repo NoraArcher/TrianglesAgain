@@ -8,7 +8,7 @@ public class TriangleDriver {
 
     Point p4 = new Point(-3.7320, 2.3);
     Point p5 = new Point(-3.7320, -5.7);
-    Point p6 = new Point(3.19620323, -1.7);
+    Point p6 = new Point( (4.0 * Math.sqrt(3) - 3.7320) , -1.7);
 
     Triangle T1 = new Triangle(p1, p2, p3); //3-4-5 right triangle
     Triangle T2 = new Triangle(p4, p5, p6); //equilateral
@@ -20,7 +20,7 @@ public class TriangleDriver {
       System.out.println("perimeter test: FAIL");
       System.out.println("12.0 != " + T1.getPerimeter());
     }
-    if (T2.getPerimeter() == 23.999999999522807) {
+    if (T2.getPerimeter() == 24.0) {
       System.out.println("perimeter test: SUCCESS");
     } else {
       System.out.println("perimeter test: FAIL");
@@ -41,7 +41,7 @@ public class TriangleDriver {
       System.out.println("area test: FAIL");
       System.out.println("6.0 != " + T1.getArea());
     }
-    if (T2.getArea() ==  27.712812920000008) {
+    if (T2.getArea() ==  27.712812921102046) {
       System.out.println("area test: SUCCESS");
     } else {
       System.out.println("area test: FAIL");
@@ -83,7 +83,7 @@ public class TriangleDriver {
       System.out.println( "string test: FAIL" );
       System.out.println( T1.toString() );
     }
-    if ( T2.toString().equals("v1(-3.732, 2.3) v2(-3.732, -5.7) v3(3.19620323, -1.7)") ) {
+    if ( T2.toString().equals("v1(-3.732, 2.3) v2(-3.732, -5.7) v3(3.1962032302755086, -1.7)") ) {
       System.out.println( "string test: SUCCESS" );
     } else {
       System.out.println( "string test: FAIL" );

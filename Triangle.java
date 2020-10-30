@@ -39,7 +39,7 @@ public class Triangle {
     if ((A == B) && (B == C)) {
       return "equilateral";
     }
-    if ( ( (A == B) || (A == C) ) || (B == C) ) {
+    if ( ( ((A == B) && (A != C)) || ((A != B) && (A == C)) ) || ((A != B) && (B == C)) ) {
       return "isosceles";
     }
     return "scalene";
